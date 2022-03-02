@@ -13,13 +13,23 @@
 # a = int(a)
 # print(type(a))
 
-a = int(input("Podaj liczbe a: "))
-b = int(input("Podaj liczbe b: "))
-c = int(input("Podaj liczbe c: "))
-d = int(input("Podaj liczbe d: "))
+# a = int(input("Podaj liczbe a: "))
+# b = int(input("Podaj liczbe b: "))
+# c = int(input("Podaj liczbe c: "))
+# d = int(input("Podaj liczbe d: "))
+#
+# if (a > b) & (c > d):
+#     print("Liczba a > b i c > d")
+# else:
+#     print("Liczba a < b lub c < d")
+#
+# for i in range(0, 7, 1):
+#     print(i, end = ' ')
 
-if (a > b) & (c > d):
-    print("Liczba a > b i c > d")
-else:
-    print("Liczba a < b lub c < d")
+# lista = ['a', 3, 4, 5.6]
+
+# for i in lista:
+#     print(i, end = ' ')
+# else:
+#     print("Wyswietlone zostaly elementy z listy")
 
