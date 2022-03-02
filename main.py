@@ -7,11 +7,15 @@ elif a < b:
 else:
    print("Liczby sa rowne")
 
+# ======================================================================   
+   
 a = input("Podaj liczbe: ")
 print(a)
 print(type(a))
 a = int(a)
 print(type(a))
+
+# ======================================================================
 
 a = int(input("Podaj liczbe a: "))
 b = int(input("Podaj liczbe b: "))
@@ -23,6 +27,8 @@ if (a > b) & (c > d):
 else:
     print("Liczba a < b lub c < d")
 
+# ======================================================================      
+      
 for i in range(0, 7, 1):
     print(i, end = ' ')
 
@@ -33,6 +39,8 @@ for i in lista:
 else:
     print("Wyswietlone zostaly elementy z listy")
 
+# ======================================================================      
+      
 licznik = 0
 while licznik != 11:
     print(licznik, end = ' ')
@@ -52,6 +60,8 @@ while licznik != len(lista):
 else:
     print("Zadna z wartosci z listy nie dala odpowiedniego wyniku.")
 
+# ======================================================================      
+      
 lista1 = [1, 2, 3, 4, 5, 6, 7, 8]
 lista2 = [1, 2, 3]
 suma = []
@@ -61,6 +71,8 @@ for i in lista1:
         suma.append(wynik)
     print(suma)
 
+# ======================================================================   
+   
 a = input("Wartosc a: ")
 b = input("Wartosc b: ")
 try:
@@ -73,6 +85,8 @@ except ZeroDivisionError:
 except ValueError:
     print("Nie wczytano liczby calkowitej")
 
+ # ======================================================================     
+      
 lista = [1,0,1,0,1,0,1,0,1,0]
 try:
     a = int(input("Podaj nowa liczbe: "))
