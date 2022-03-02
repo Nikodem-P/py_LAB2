@@ -91,6 +91,8 @@ print(lista)
 print("Usunieta wartosc na indeksie 0: " + str(lista.pop(0)))
 print(lista)
 
+# ======================================================================
+
 student = {
     "imie" : "Jan",
     "nazwisko" : "Kowalski",
