@@ -44,3 +44,22 @@ print(lista)
 # Skrócona forma
 lista2 = [(a,b) for a in [1,2,3] for b in [4,5,6]]
 print(lista2)
+
+# ==================================
+
+slownik = {
+    "PZU": "Panstwowy Zaklad Ubezpieczen",
+    "ZUS": "Zaklad Upezpieczen Spolecznych",
+    "PKO": "Panstwowa Kasa Oszczednosci"
+}
+
+slownik_odwrocony = {}
+
+for key, value in slownik.items():
+    slownik_odwrocony[value] = key
+
+print(slownik)
+print(slownik_odwrocony)
+
+slownik2 = {value: key for key, value in slownik.items()}
+print(slownik2)
