@@ -53,8 +53,8 @@ print(mat_diag_k)
 z2 = np.fromiter(range(5), dtype='int32')
 print(z)
 
-Marcin = b'marcin'
-print(Marcin)
+marcin = b'marcin'
+print(marcin)
 marcin = 'Marcin'
 mar_3 = np.array(list(marcin))
 mar_4 = np.array(list(marcin), dtype='S1')
