@@ -16,3 +16,7 @@ print('Wartosci minimalne w kolumnach:')
 print(matrix3.max(axis=0))
 print('Wartosci minimalne w wierszach:')
 print(matrix3.max(axis=1))
+print('===============')
+
+# Zadanie 3
+print(matrix1.dot(matrix2))
