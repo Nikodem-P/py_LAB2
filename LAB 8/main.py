@@ -43,11 +43,40 @@ print('===============')
 
 # Zadanie 7
 print(a + b)
+print('===============')
 
 # Zadanie 8
 matrix8 = numpy.arange(9).reshape(3,3)
 for i in matrix8:
     print(i)
-    
+print('===============')
+
 # Zadanie 9
-matrix9 = 
+matrix10 = numpy.arange(9).reshape(3,3)
+for i in matrix8.flat:
+    print(i)
+print('===============')
+
+# Zadanie 10
+matrix9 = numpy.arange(81).reshape(9, 9)
+print(matrix9)
+matrix9a = matrix9.reshape(1,81)
+print(matrix9a)
+matrix9b = matrix9.reshape(81,1)
+print(matrix9b)
+matrix9c = matrix9.reshape(3,27)
+print(matrix9c)
+matrix9d = matrix9.reshape(27,3)
+print(matrix9d)
+# Wszystkie dzieliniki liczby 81
+
+# Zadanie 11
+matrix11 = numpy.arange(12).reshape(3, 4)
+matrix12 = numpy.arange(12).reshape(4, 3)
+matrix13 = numpy.arange(12).reshape(2, 6)
+
+print(matrix11.flatten())
+print(matrix12.flatten())
+print(matrix13.flatten())
+
+# Tak.
