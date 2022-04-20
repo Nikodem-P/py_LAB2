@@ -29,3 +29,5 @@ iris.to_csv("nowy.csv", index=False)
 xlsx = pandas.ExcelFile("wyniki.xlsx")
 df3 = pandas.read_excel(xlsx, header=0)
 print(df3)
+
+df3.to_excel('nowy.xlsx', sheet_name="Arkusz 1", index=False)
