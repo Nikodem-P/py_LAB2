@@ -68,7 +68,21 @@ print(df.isin(szukaj))
 s2['e'] = 15
 print(s2)
 
-# df.loc[3] = 'nowy element'
-# print(df)
+df.loc[3] = 'nowy element'
+print(df)
 df.loc[4] = ["Polska", "Warszawa", 38675467]
 print(df)
+
+df.drop([3], inplace=True)
+print(df)
+
+# df.drop("Kraj", axis=1, inplace=True)
+
+df["Kontynent"] = ["Europa", "Azja", "Ameryka Południowa", "Europa"]
+print(df)
+
+print(df.sort_values(by="Populacja"))
+grupa = df.groupby(["Kontynent"])
+print(grupa.get_group("Europa"))
+
+print(df.groupby(["Kontynent"]).agg({"Populacja" : ["sum"]}))
