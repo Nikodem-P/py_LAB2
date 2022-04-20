@@ -64,3 +64,11 @@ print(df[df["Populacja"] > 12000000])
 print(df[((df.Populacja > 1000000) & (df.index.isin([0, 2])))])
 szukaj = ["Belgia", "Brasilia"]
 print(df.isin(szukaj))
+
+s2['e'] = 15
+print(s2)
+
+# df.loc[3] = 'nowy element'
+# print(df)
+df.loc[4] = ["Polska", "Warszawa", 38675467]
+print(df)
