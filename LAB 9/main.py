@@ -1,6 +1,5 @@
 import numpy
 import pandas
-import openpyxl
 
 s1 = pandas.Series([1, 3, 5.5, numpy.nan, 'a'])
 print(s1)
@@ -21,3 +20,12 @@ print(daty)
 
 df2 = pandas.DataFrame(numpy.random.randn(5, 4), index=daty, columns=list('ABCD'))
 print(df2)
+
+iris = pandas.read_csv("iris.csv", header=0, sep=',', decimal='.')
+print(iris)
+
+iris.to_csv("nowy.csv", index=False)
+
+xlsx = pandas.ExcelFile("wyniki.xlsx")
+df3 = pandas.read_excel(xlsx, header=0)
+print(df3)
