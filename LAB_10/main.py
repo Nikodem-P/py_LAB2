@@ -2,14 +2,14 @@ import pandas
 import numpy
 from matplotlib import pyplot
 
-# ts0 = pandas.Series(numpy.random.randn(1000))
-#
-# ts0 = ts0.cumsum()
-# print(ts0)
-# ts0.plot()
-#
-# pyplot.savefig("wykres0.png")
-# pyplot.show()
+ts0 = pandas.Series(numpy.random.randn(1000))
+
+ts0 = ts0.cumsum()
+print(ts0)
+ts0.plot()
+
+pyplot.savefig("wykres0.png")
+pyplot.show()
 
 kraje = {
     "Kraj" : ["Belgia", "Indie", "Brazylia", "Polska"],
@@ -30,3 +30,18 @@ wykres.legend()
 pyplot.savefig("wykres1.png")
 pyplot.show()
 
+data = pandas.read_csv("dane.csv", header=0, sep=";", decimal=".")
+print(data)
+grupa = data.groupby("Imię i nazwisko").agg({"Wartość zamówienia" : ["sum"]})
+print(grupa)
+
+grupa.plot.pie(subplots=True, autopct='%.2f %%', fontsize=16, figsize=(5,5), legend=False)
+pyplot.savefig("wykres2.png")
+pyplot.show()
+
+data = pandas.DataFrame(ts0)
+data["Średnia krocząca"] = data.rolling(window=50).mean()
+data.plot()
+pyplot.legend(["Wartości", "Średnia krocząca"])
+pyplot.savefig("wykres3.png")
+pyplot.show()
